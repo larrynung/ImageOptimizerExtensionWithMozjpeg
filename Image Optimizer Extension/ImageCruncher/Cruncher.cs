@@ -58,12 +58,16 @@ namespace ImageCruncher
 			{
 				optimizer = new PunyPng();
 			}
-			else
-			{
-				optimizer = new SmushIt();
-			}
+            else if (extension == ".JPG" || extension == ".JPEG")
+            {
+                optimizer = new Mozjpeg();
+            }
+            else
+            {
+                optimizer = new SmushIt();
+            }
 
-			optimizer.Completed += delegate(object s, CruncherEventArgs e) { OnProgress(e); };
+		    optimizer.Completed += delegate(object s, CruncherEventArgs e) { OnProgress(e); };
             optimizer.BeforeWritingFile += delegate(object s, CruncherEventArgs e) { OnBeforeWritingFile(e.Result); };
 			optimizer.Optimize(path);
 		}

@@ -15,13 +15,13 @@
         defining some of the constants that we will use inside the file. -->
 
     <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
-    <Extern href="stdidcmd.h"/>
+    <Extern href="stdidcmd.h" />
 
     <!--This header contains the command ids for the menus provided by the shell. -->
-    <Extern href="vsshlids.h"/>
+    <Extern href="vsshlids.h" />
 
     <!--Definition of some VSCT specific constants. In this sample we use it for the IDs inside the guidOfficeIcon group. -->
-    <Extern href="msobtnid.h"/>
+    <!--<Extern href="msobtnid.h" xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" />-->
 
 
 
@@ -45,20 +45,20 @@
         <Groups>
 
             <Group guid="guidImage_Optimizer_ExtensionCmdSet" id="MyMenuGroup" priority="0x0600">
-                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE"/>
+                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
             </Group>
 
             <Group guid="guidImage_Optimizer_ExtensionCmdSet" id="MyMenuGroup" priority="0x0602">
-                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_WEBFOLDER"/>
+                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_WEBFOLDER" />
             </Group>
 
             <Group guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup" priority="0x0601">
-                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
             </Group>
 
             <Group guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup" priority="0x601">
 
-                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_WEBITEMNODE"/>
+                <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_WEBITEMNODE" />
 
             </Group>
 
@@ -97,7 +97,7 @@
             </Button>
 
             <Button guid="guidDynamicMenuDevelopmentCmdSetPart3" id="cmdImageOptimizerQueryStatus" priority="0x0600" type="Button">
-                <Parent guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup"/>
+                <Parent guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup" />
                 <Icon guid="guidImages" id="bmpPic1" />
                 <CommandFlag>DynamicVisibility</CommandFlag>
                 <Strings>
@@ -107,7 +107,7 @@
             </Button>
 
             <Button guid="guidDynamicMenuDevelopmentCmdSetPart2" id="cmdidQueryStatus" priority="0x0601" type="Button">
-                <Parent guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup"/>
+                <Parent guid="guidDynamicMenuDevelopmentCmdSetPart2" id="menuidQueryStatusGroup" />
                 <Icon guid="guidImages" id="bmpPic1" />
                 <CommandFlag>DynamicVisibility</CommandFlag>
                 <Strings>
@@ -139,7 +139,7 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used 
             inside a button definition. An important aspect of this declaration is that the element id 
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-            <Bitmap guid="guidImages" href="Resources\Flash-Get-SZ-icon.png" usedList="bmpPic1"/>
+            <Bitmap guid="guidImages" href="Resources\Flash-Get-SZ-icon.png" usedList="bmpPic1" />
 
         </Bitmaps>
 
@@ -163,17 +163,17 @@
         </GuidSymbol>
 
         <GuidSymbol name="guidDynamicMenuDevelopmentCmdSetPart2" value="{9d9046da-94f8-4fd0-8a00-92bf4f6defa8}">
-            <IDSymbol name="menuidQueryStatusGroup" value="0x1020"/>
+            <IDSymbol name="menuidQueryStatusGroup" value="0x1020" />
             <IDSymbol name="cmdidQueryStatus" value="0x0102" />
         </GuidSymbol>
 
         <GuidSymbol name="guidDynamicMenuDevelopmentCmdSetPart3" value="{9d9046da-94f8-4fd0-8a00-92bf4f6defa9}">
-            <IDSymbol name="menuidQueryStatusGroup" value="0x1020"/>
+            <IDSymbol name="menuidQueryStatusGroup" value="0x1020" />
             <IDSymbol name="cmdImageOptimizerQueryStatus" value="0x0101" />
         </GuidSymbol>
 
         <GuidSymbol name="guidDynamicMenuDevelopmentCmdSetPart5" value="{9d9046da-94f8-4fd0-8a00-92bf4f6defa0}">
-            <IDSymbol name="menuidQueryStatusGroup" value="0x1020"/>
+            <IDSymbol name="menuidQueryStatusGroup" value="0x1020" />
             <IDSymbol name="embedQueryStatus" value="0x0103" />
         </GuidSymbol>
 
@@ -183,7 +183,7 @@
 
 
 
-        <GuidSymbol name="guidImages" value="{6f63b112-167a-47cb-8c76-c61a32e6f740}" >
+        <GuidSymbol name="guidImages" value="{6f63b112-167a-47cb-8c76-c61a32e6f740}">
             <IDSymbol name="bmpPic1" value="1" />
         </GuidSymbol>
     </Symbols>

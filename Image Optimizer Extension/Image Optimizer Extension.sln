@@ -1,23 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image Optimizer Extension", "Image Optimizer Extension\Image Optimizer Extension.csproj", "{B212D084-A400-482E-A2BE-3A3E8EC9D028}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCruncher", "ImageCruncher\ImageCruncher.csproj", "{AC0884CD-A1B0-478C-A54D-75AFB3693828}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Image\u0020Optimizer\u0020Extension\\Image\u0020Optimizer\u0020Extension.csproj
-		SccProjectName1 = Image\u0020Optimizer\u0020Extension
-		SccLocalPath1 = Image\u0020Optimizer\u0020Extension
-		SccProjectUniqueName2 = ImageCruncher\\ImageCruncher.csproj
-		SccProjectName2 = ImageCruncher
-		SccLocalPath2 = ImageCruncher
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MadsKristensen.Image_Optimizer_Extension {
+namespace ImageCruncher.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MadsKristensen.Image_Optimizer_Extension {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MadsKristensen.Image_Optimizer_Extension.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ImageCruncher.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,16 @@ namespace MadsKristensen.Image_Optimizer_Extension {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] libmozjpeg_2_1_x86 {
+            get {
+                object obj = ResourceManager.GetObject("libmozjpeg_2_1_x86", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
